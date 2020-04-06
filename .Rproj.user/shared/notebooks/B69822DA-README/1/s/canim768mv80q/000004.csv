@@ -1,0 +1,2 @@
+"0","ggplot(df, aes(fill = language, y = f1_cent, x = vowel)) + "
+"0","    geom_bar(position=""dodge"", stat=""identity"")"
