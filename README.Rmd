@@ -3,7 +3,7 @@ title: "pa_3"
 output: github_document
 ---
 
-# Programming Assignment 3
+# Programming Assignment 3 
 
 ## Answers to the questions
 
