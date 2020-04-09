@@ -1,0 +1,4 @@
+"0","ggplot(df, aes(x=language, y=f2_cent, fill=vowel)) + "
+"0","    geom_boxplot() +"
+"0","    facet_wrap(~vowel, scale=""free"") +"
+"0","  labs(title = ""F2 centroid as a function of vowel and language"")"

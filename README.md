@@ -205,29 +205,62 @@ sd(df$tl)
 ### 1\. Trajectory length as a function of vowel and language
 
 ``` r
-ggplot(df, aes(fill = language, y = tl, x = vowel)) + 
-    geom_bar(position="dodge", stat="identity")
+ggplot(df, aes(x=language, y=tl, fill=vowel)) + 
+    geom_boxplot()+
+  facet_wrap(~vowel)+
+  labs(title = "Trajectory length as a function of vowel and language", y = "trajectory length")
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
-### 2\. F1 as a function of vowel and language
-
 ``` r
-ggplot(df, aes(fill = language, y = f1_cent, x = vowel)) + 
-    geom_bar(position="dodge", stat="identity")
+ggplot(df, aes(x=language, y=tl, fill=vowel)) + 
+    geom_boxplot() +
+    facet_wrap(~vowel, scale="free")+
+  labs(title = "Trajectory length as a function of vowel and language", y = "trajectory length")
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
 
-### 3\. F2 as a function of vowel and language
+### 2\. F1 as a function of vowel and language
 
 ``` r
-ggplot(df, aes(fill = language, y = f2_cent, x = vowel)) + 
-    geom_bar(position="dodge", stat="identity")
+ggplot(df, aes(x=language, y=f1_cent, fill=vowel)) + 
+    geom_boxplot()+
+  facet_wrap(~vowel)+
+  labs(title = "F1 centroid as a function of vowel and language")
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+
+``` r
+ggplot(df, aes(x=language, y=f1_cent, fill=vowel)) + 
+    geom_boxplot() +
+    facet_wrap(~vowel, scale="free")+
+  labs(title = "F1 centroid as a function of vowel and language")
+```
+
+![](README_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+
+### 3\. F2 as a function of vowel and language
+
+``` r
+ggplot(df, aes(x=language, y=f2_cent, fill=vowel)) + 
+    geom_boxplot()+
+  facet_wrap(~vowel)+
+  labs(title = "F2 centroid as a function of vowel and language")
+```
+
+![](README_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+
+``` r
+ggplot(df, aes(x=language, y=f2_cent, fill=vowel)) + 
+    geom_boxplot() +
+    facet_wrap(~vowel, scale="free") +
+  labs(title = "F2 centroid as a function of vowel and language")
+```
+
+![](README_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
 
 ## FREEBIE
 

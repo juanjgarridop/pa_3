@@ -1,0 +1,23 @@
+"0","library(tidyverse)"
+"0","read_csv(""data/vowel_data.csv"")"
+"2","Parsed with column specification:
+cols(
+  id = [31mcol_character()[39m,
+  item = [31mcol_character()[39m,
+  vowel = [31mcol_character()[39m,
+  language = [31mcol_character()[39m,
+  f1_cent = [32mcol_double()[39m,
+  f2_cent = [32mcol_double()[39m,
+  tl = [32mcol_double()[39m,
+  f1_20 = [32mcol_double()[39m,
+  f1_35 = [32mcol_double()[39m,
+  f1_50 = [32mcol_double()[39m,
+  f1_65 = [32mcol_double()[39m,
+  f1_80 = [32mcol_double()[39m,
+  f2_20 = [32mcol_double()[39m,
+  f2_35 = [32mcol_double()[39m,
+  f2_50 = [32mcol_double()[39m,
+  f2_65 = [32mcol_double()[39m,
+  f2_80 = [32mcol_double()[39m
+)
+"
